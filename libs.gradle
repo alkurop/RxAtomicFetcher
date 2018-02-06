@@ -1,0 +1,4 @@
+ext.versions = [
+        'kotlin'     : '1.2.20',
+        'rxJava'     : '2.1.9',
+]

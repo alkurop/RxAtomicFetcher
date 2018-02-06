@@ -1,0 +1,18 @@
+apply from: '../libs.gradle'
+apply plugin: 'java-library'
+apply plugin: "kotlin"
+
+dependencies {
+    api "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
+    api "io.reactivex.rxjava2:rxjava:$versions.rxJava"
+    testImplementation 'junit:junit:4.12'
+}
+repositories {
+    google()
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+jar.dependsOn test
